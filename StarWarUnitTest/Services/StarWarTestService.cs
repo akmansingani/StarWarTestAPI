@@ -125,7 +125,7 @@ namespace StarWarUnitTest.Services
                 },
                 new PersonModel
                 {
-                    id = 1,
+                    id = 2,
                     birth_year = "112BBY",
                     created = DateTime.Now,
                     edited = DateTime.Now,
@@ -170,6 +170,36 @@ namespace StarWarUnitTest.Services
             }
         }
 
-   
+        public ResponseHandler getCharacterMostAppeared()
+        {
+            try
+            {
+                // finds movie character who appeared most
+
+                var films_characters = _films_characters.AsQueryable();
+                var people = _people.AsQueryable();
+
+                var characterName = (from t1 in _films_characters
+                                     join t2 in people on t1.people_id equals t2.id
+                                     group new { t1, t2 } by new { t1.people_id, t2.name } into t3
+                                     orderby t3.Count() descending, t3.FirstOrDefault().t2.name
+                                     select t3.FirstOrDefault().t2.name).FirstOrDefault();
+
+                return new ResponseHandler
+                {
+                    status = "success",
+                    response = characterName
+                };
+
+            }
+            catch (Exception ex)
+            {
+                return new ResponseHandler
+                {
+                    status = "error",
+                    response = "Please try later!"
+                };
+            }
+        }
     }
 }

@@ -33,5 +33,21 @@ namespace StarWarUnitTest
 
             Xunit.Assert.Equal("A New Hope", okResult.response);
         }
+
+        [Fact]
+        public void Get_Character_Most_Appeared_Check()
+        {
+            ResponseHandler okResult = _service.getCharacterMostAppeared();
+
+            Xunit.Assert.Equal("success", okResult.status);
+        }
+
+        [Fact]
+        public void Get_Character_Most_Appeared_Check_Response()
+        {
+            ResponseHandler okResult = _service.getCharacterMostAppeared();
+
+            Xunit.Assert.Equal("Luke Skywalker", okResult.response);
+        }
     }
 }

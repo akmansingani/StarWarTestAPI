@@ -10,5 +10,6 @@ namespace StarWarTestAPI.Services
     {
         ResponseHandler getMovieTitleOpeningCrawl();
 
+        ResponseHandler getCharacterMostAppeared();
     }
 }

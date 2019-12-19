@@ -31,3 +31,4 @@ C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarW
 C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.csproj.CopyComplete
 C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.dll
 C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.pdb
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.csprojAssemblyReference.cache

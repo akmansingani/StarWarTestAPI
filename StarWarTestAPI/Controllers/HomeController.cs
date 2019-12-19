@@ -40,5 +40,18 @@ namespace StarWarTestAPI.Controllers
             return Ok(resp);
         }
 
+        [HttpGet("getCharacterMostAppeared")]
+        public ActionResult GetCharacterMostAppeared()
+        {
+            ResponseHandler resp = _starService.getCharacterMostAppeared();
+
+            if (resp.status == "error")
+            {
+                return BadRequest(resp);
+            }
+
+            return Ok(resp);
+        }
+
     }
 }
