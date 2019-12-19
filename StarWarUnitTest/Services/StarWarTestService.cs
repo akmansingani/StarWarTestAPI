@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using StarWarTestAPI.Models;
 using StarWarTestAPI.Services;
 
@@ -15,6 +16,12 @@ namespace StarWarUnitTest.Services
         private readonly List<Films_CharacterModels> _films_characters;
 
         private readonly List<PersonModel> _people;
+
+        private readonly List<Films_Species> _films_species;
+
+        private readonly List<SpeciesModel> _species;
+
+        private readonly List<People_Species> _species_people;
 
         public StarWarTestService()
         {
@@ -139,6 +146,58 @@ namespace StarWarUnitTest.Services
                     skin_color = "gold"
                 }
             };
+
+            _films_species = new List<Films_Species>()
+            {
+                new Films_Species
+                {
+                    film_id = 1,
+                    species_id = 1
+                },
+                new Films_Species
+                {
+                    film_id = 2,
+                    species_id = 2
+                },
+                new Films_Species
+                {
+                    film_id = 3,
+                    species_id = 1
+                }
+            };
+
+            _species = new List<SpeciesModel>()
+            {
+                new SpeciesModel
+                {
+                    id = 1,
+                    name = "Human",
+                },
+                new SpeciesModel
+                {
+                    id = 2,
+                    name = "Yoda",
+                }
+            };
+
+            _species_people = new List<People_Species>()
+            {
+                new People_Species
+                {
+                    people_id = 1,
+                    species_id = 1
+                },
+                new People_Species
+                {
+                    people_id = 2,
+                    species_id = 2
+                },
+                new People_Species
+                {
+                    people_id = 1,
+                    species_id = 2
+                }
+            };
         }
 
         public ResponseHandler getMovieTitleOpeningCrawl()
@@ -189,6 +248,47 @@ namespace StarWarUnitTest.Services
                 {
                     status = "success",
                     response = characterName
+                };
+
+            }
+            catch (Exception ex)
+            {
+                return new ResponseHandler
+                {
+                    status = "error",
+                    response = "Please try later!"
+                };
+            }
+        }
+
+        public ResponseHandler getMostNumberOfSpecies()
+        {
+            try
+            {
+                var films_species = _films_species.AsQueryable();
+                var species = _species.AsQueryable();
+                var species_people = _species_people.AsQueryable();
+
+                // get lists of most number of appeared species in movie
+                var speciesList = (from t1 in films_species
+                                   join t2 in species on t1.species_id equals t2.id
+                                   group new { t1, t2 } by new { t1.species_id, t2.name } into t3
+                                   orderby t3.Count() descending, t3.FirstOrDefault().t1.species_id
+                                   select new
+                                   {
+                                       speciesname = t3.FirstOrDefault().t2.name,
+                                       speciescount = (from t4 in species_people
+                                                       where t4.species_id == t3.FirstOrDefault().t1.species_id
+                                                       select t4).Count()
+                                   });
+
+                return new ResponseHandler
+                {
+                    status = "success",
+                    response = JsonConvert.SerializeObject(new
+                    {
+                        species = speciesList,
+                    })
                 };
 
             }
