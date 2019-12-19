@@ -1,0 +1,33 @@
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarTestAPI\bin\Debug\netcoreapp2.2\StarWarTestAPI.deps.json
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarTestAPI\bin\Debug\netcoreapp2.2\StarWarTestAPI.runtimeconfig.json
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarTestAPI\bin\Debug\netcoreapp2.2\StarWarTestAPI.runtimeconfig.dev.json
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarTestAPI\bin\Debug\netcoreapp2.2\StarWarTestAPI.dll
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarTestAPI\bin\Debug\netcoreapp2.2\StarWarTestAPI.pdb
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarTestAPI\bin\Debug\netcoreapp2.2\CommonProjectDLL.dll
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarTestAPI\bin\Debug\netcoreapp2.2\CommonProjectDLL.pdb
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.csprojAssemblyReference.cache
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.csproj.CoreCompileInputs.cache
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.RazorAssemblyInfo.cache
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.RazorAssemblyInfo.cs
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.AssemblyInfoInputs.cache
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.AssemblyInfo.cs
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.csproj.CopyComplete
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.dll
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.pdb
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarTestAPI\bin\Debug\netcoreapp2.2\StarWarTestAPI.deps.json
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarTestAPI\bin\Debug\netcoreapp2.2\StarWarTestAPI.runtimeconfig.json
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarTestAPI\bin\Debug\netcoreapp2.2\StarWarTestAPI.runtimeconfig.dev.json
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarTestAPI\bin\Debug\netcoreapp2.2\StarWarTestAPI.dll
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarTestAPI\bin\Debug\netcoreapp2.2\StarWarTestAPI.pdb
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarTestAPI\bin\Debug\netcoreapp2.2\CommonProjectDLL.dll
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarTestAPI\bin\Debug\netcoreapp2.2\CommonProjectDLL.pdb
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.csproj.CoreCompileInputs.cache
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.RazorAssemblyInfo.cache
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.RazorAssemblyInfo.cs
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.AssemblyInfoInputs.cache
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.AssemblyInfo.cs
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.csproj.CopyComplete
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.dll
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarTestAPI\obj\Debug\netcoreapp2.2\StarWarTestAPI.pdb

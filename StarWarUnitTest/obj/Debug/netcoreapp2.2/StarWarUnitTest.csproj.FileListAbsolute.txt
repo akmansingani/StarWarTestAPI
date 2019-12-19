@@ -1,0 +1,44 @@
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.dll
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.pdb
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\nunit.engine.netstandard.dll
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\StarWarUnitTest.deps.json
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\StarWarUnitTest.runtimeconfig.json
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\StarWarUnitTest.runtimeconfig.dev.json
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\StarWarUnitTest.dll
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\StarWarUnitTest.pdb
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\CommonProjectDLL.dll
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\StarWarTestAPI.dll
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\StarWarTestAPI.pdb
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\CommonProjectDLL.pdb
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarUnitTest\obj\Debug\netcoreapp2.2\StarWarUnitTest.csprojAssemblyReference.cache
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarUnitTest\obj\Debug\netcoreapp2.2\StarWarUnitTest.csproj.CoreCompileInputs.cache
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarUnitTest\obj\Debug\netcoreapp2.2\StarWarUnitTest.AssemblyInfoInputs.cache
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarUnitTest\obj\Debug\netcoreapp2.2\StarWarUnitTest.AssemblyInfo.cs
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarUnitTest\obj\Debug\netcoreapp2.2\StarWarUnitTest.csproj.CopyComplete
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarUnitTest\obj\Debug\netcoreapp2.2\StarWarUnitTest.dll
+C:\Users\Paresh\source\repos\StarWarTestAPI\StarWarUnitTest\obj\Debug\netcoreapp2.2\StarWarUnitTest.pdb
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.dll
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.pdb
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\nunit.engine.netstandard.dll
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\StarWarUnitTest.deps.json
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\StarWarUnitTest.runtimeconfig.json
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\StarWarUnitTest.runtimeconfig.dev.json
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\StarWarUnitTest.dll
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\StarWarUnitTest.pdb
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\CommonProjectDLL.dll
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\StarWarTestAPI.dll
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\StarWarTestAPI.pdb
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarUnitTest\bin\Debug\netcoreapp2.2\CommonProjectDLL.pdb
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarUnitTest\obj\Debug\netcoreapp2.2\StarWarUnitTest.csprojAssemblyReference.cache
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarUnitTest\obj\Debug\netcoreapp2.2\StarWarUnitTest.csproj.CoreCompileInputs.cache
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarUnitTest\obj\Debug\netcoreapp2.2\StarWarUnitTest.AssemblyInfoInputs.cache
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarUnitTest\obj\Debug\netcoreapp2.2\StarWarUnitTest.AssemblyInfo.cs
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarUnitTest\obj\Debug\netcoreapp2.2\StarWarUnitTest.csproj.CopyComplete
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarUnitTest\obj\Debug\netcoreapp2.2\StarWarUnitTest.dll
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\StarWarUnitTest\obj\Debug\netcoreapp2.2\StarWarUnitTest.pdb

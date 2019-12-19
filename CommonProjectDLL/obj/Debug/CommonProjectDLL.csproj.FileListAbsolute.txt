@@ -1,0 +1,11 @@
+C:\Users\Paresh\source\repos\StarWarTestAPI\CommonProjectDLL\bin\Debug\CommonProjectDLL.dll
+C:\Users\Paresh\source\repos\StarWarTestAPI\CommonProjectDLL\bin\Debug\CommonProjectDLL.pdb
+C:\Users\Paresh\source\repos\StarWarTestAPI\CommonProjectDLL\obj\Debug\CommonProjectDLL.csproj.CoreCompileInputs.cache
+C:\Users\Paresh\source\repos\StarWarTestAPI\CommonProjectDLL\obj\Debug\CommonProjectDLL.dll
+C:\Users\Paresh\source\repos\StarWarTestAPI\CommonProjectDLL\obj\Debug\CommonProjectDLL.pdb
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\CommonProjectDLL\bin\Debug\CommonProjectDLL.dll
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\CommonProjectDLL\bin\Debug\CommonProjectDLL.pdb
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\CommonProjectDLL\obj\Debug\CommonProjectDLL.csprojAssemblyReference.cache
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\CommonProjectDLL\obj\Debug\CommonProjectDLL.csproj.CoreCompileInputs.cache
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\CommonProjectDLL\obj\Debug\CommonProjectDLL.dll
+C:\Users\Paresh\Documents\All docs\Code\github\StarWarsTest\StarWarTestAPI\CommonProjectDLL\obj\Debug\CommonProjectDLL.pdb
