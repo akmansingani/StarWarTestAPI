@@ -66,5 +66,18 @@ namespace StarWarTestAPI.Controllers
             return Ok(resp);
         }
 
+        [HttpGet("getPlanetNumberOfPilots")]
+        public ActionResult GetPlanetNumberOfPilots()
+        {
+            ResponseHandler resp = _starService.getPlanetNumberOfPilots();
+
+            if (resp.status == "error")
+            {
+                return BadRequest(resp);
+            }
+
+            return Ok(resp);
+        }
+
     }
 }

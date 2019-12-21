@@ -115,5 +115,70 @@ namespace StarWarTestAPI.Services
                 };
             }
         }
+        public ResponseHandler getPlanetNumberOfPilots()
+        {
+            try
+            {
+                // get list of planets with relation to film and starship
+               
+                var planetlist = (from t1 in _dbContext.films_planets
+                                  join t2 in _dbContext.films_starships on t1.film_id equals t2.film_id
+                                  select new
+                                  {
+                                      planetid = t1.planet_id,
+                                      filmid = t1.film_id,
+                                      starshipid = t2.starship_id
+                                  }).GroupBy(x => x.planetid).ToList();
+
+                // get list of people data base on planet list
+
+                var peopleData = from t1 in planetlist
+                                 select new {
+                                      planetid = t1.Key,
+                                      people = (from t in _dbContext.starships_pilots
+                                                where t1.Select(g => g.starshipid).Contains(t.starship_id)
+                                                select new { id = t.people_id  }
+                                                ).Distinct()
+                                 };
+
+                // get final data with people count, species name, people name,planet name
+                var taskData = (from t1 in peopleData
+                               join t2 in _dbContext.planets on t1.planetid equals t2.id
+                               select new
+                               {
+                                   planet_id = t1.planetid,
+                                   planetname = t2.name,
+                                   people_count = t1.people.Count(),
+                                   people_list = (from z1 in _dbContext.people
+                                           join z2 in _dbContext.species_people on z1.id equals z2.people_id
+                                           join z3 in _dbContext.species on z2.species_id equals z3.id
+                                           join z4 in t1.people on z1.id equals z4.id
+                                           select new
+                                           {
+                                               people_name = z1.name + " - " + z3.name
+                                           })
+                                   
+                               }).OrderByDescending(x => x.people_count).Take(5);
+
+                return new ResponseHandler
+                {
+                    status = "success",
+                    response = JsonConvert.SerializeObject(new
+                    {
+                        planets = taskData,
+                    })
+                };
+
+            }
+            catch (Exception ex)
+            {
+                return new ResponseHandler
+                {
+                    status = "error",
+                    response = "Please try later!"
+                };
+            }
+        }
+    
     }
 }

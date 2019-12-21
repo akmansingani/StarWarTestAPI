@@ -68,5 +68,23 @@ namespace StarWarUnitTest
 
             Xunit.Assert.Equal("Human", array[0]["speciesname"].ToString());
         }
+
+        [Fact]
+        public void Get_Planet_Number_Of_Pilots_Check()
+        {
+            ResponseHandler okResult = _service.getPlanetNumberOfPilots();
+
+            Xunit.Assert.Equal("success", okResult.status);
+        }
+
+        [Fact]
+        public void Get_Planet_Number_Of_Pilots_Check_Response()
+        {
+            ResponseHandler okResult = _service.getPlanetNumberOfPilots();
+            JObject joResponse = JObject.Parse(okResult.response);
+            JArray array = (JArray)joResponse["planets"];
+
+            Xunit.Assert.Equal("Tatooine", array[0]["planetname"].ToString());
+        }
     }
 }
