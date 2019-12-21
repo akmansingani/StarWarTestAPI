@@ -11,5 +11,7 @@ namespace StarWarTestAPI.Services
         ResponseHandler getMovieTitleOpeningCrawl();
 
         ResponseHandler getCharacterMostAppeared();
+
+        ResponseHandler getMostNumberOfSpecies();
     }
 }

@@ -53,5 +53,18 @@ namespace StarWarTestAPI.Controllers
             return Ok(resp);
         }
 
+        [HttpGet("getMostNumberOfSpecies")]
+        public ActionResult GetMostNumberOfSpecies()
+        {
+            ResponseHandler resp = _starService.getMostNumberOfSpecies();
+
+            if (resp.status == "error")
+            {
+                return BadRequest(resp);
+            }
+
+            return Ok(resp);
+        }
+
     }
 }
