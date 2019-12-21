@@ -141,15 +141,6 @@ namespace StarWarTestAPI.Services
                                                 ).Distinct()
                                  };
 
-                var peopleSpeciesList = (from z1 in _dbContext.people
-                                        join z2 in _dbContext.species_people on z1.id equals z2.people_id
-                                        join z3 in _dbContext.species on z2.species_id equals z3.id
-                                        select new
-                                        {
-                                            people_id = z1.id,
-                                            peoplename = z1.name + " - " + z3.name
-                                        }).ToList();
-
                 // get final data with people count, species name, people name,planet name
                 var taskData = (from t1 in peopleData
                                join t2 in _dbContext.planets on t1.planetid equals t2.id
