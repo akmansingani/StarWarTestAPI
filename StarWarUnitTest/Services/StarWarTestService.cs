@@ -23,6 +23,14 @@ namespace StarWarUnitTest.Services
 
         private readonly List<People_Species> _species_people;
 
+        private readonly List<Films_Planet> _films_planets;
+
+        private readonly List<Films_StarShips> _films_starships;
+
+        private readonly List<StarsShips_Pilot> _starships_pilots;
+
+        private readonly List<PlanetModel> _planets;
+
         public StarWarTestService()
         {
             // films data
@@ -147,6 +155,7 @@ namespace StarWarUnitTest.Services
                 }
             };
 
+            // films species data
             _films_species = new List<Films_Species>()
             {
                 new Films_Species
@@ -166,6 +175,7 @@ namespace StarWarUnitTest.Services
                 }
             };
 
+            // species data
             _species = new List<SpeciesModel>()
             {
                 new SpeciesModel
@@ -180,6 +190,7 @@ namespace StarWarUnitTest.Services
                 }
             };
 
+            // species people data
             _species_people = new List<People_Species>()
             {
                 new People_Species
@@ -198,6 +209,90 @@ namespace StarWarUnitTest.Services
                     species_id = 2
                 }
             };
+
+            // planets data
+            _planets = new List<PlanetModel>()
+            {
+                new PlanetModel
+                {
+                    id = 1,
+                    name = "Tatooine"
+                },
+                new PlanetModel
+                {
+                    id = 2,
+                    name = "Alderaan"
+                },
+                new PlanetModel
+                {
+                    id = 3,
+                    name = "Yavin IV"
+                }
+            };
+
+            // films planets data
+            _films_planets = new List<Films_Planet>()
+            {
+                new Films_Planet
+                {
+                    planet_id = 1,
+                    film_id = 1
+                },
+                new Films_Planet
+                {
+                    planet_id = 2,
+                    film_id = 2
+                },
+                new Films_Planet
+                {
+                    planet_id = 3,
+                    film_id = 1
+                },
+               
+            };
+
+            // films starships data
+            _films_starships = new List<Films_StarShips>()
+            {
+                new Films_StarShips
+                {
+                    starship_id = 1,
+                    film_id = 1
+                },
+                new Films_StarShips
+                {
+                    starship_id = 2,
+                    film_id = 2
+                },
+                new Films_StarShips
+                {
+                    starship_id = 1,
+                    film_id = 1
+                },
+
+            };
+
+            // pilots starships data
+            _starships_pilots = new List<StarsShips_Pilot>()
+            {
+                new StarsShips_Pilot
+                {
+                    starship_id = 1,
+                    people_id = 1
+                },
+                new StarsShips_Pilot
+                {
+                    starship_id = 2,
+                    people_id = 2
+                },
+                new StarsShips_Pilot
+                {
+                    starship_id = 1,
+                    people_id = 1
+                },
+
+            };
+            //  , ,  
         }
 
         public ResponseHandler getMovieTitleOpeningCrawl()
@@ -288,6 +383,70 @@ namespace StarWarUnitTest.Services
                     response = JsonConvert.SerializeObject(new
                     {
                         species = speciesList,
+                    })
+                };
+
+            }
+            catch (Exception ex)
+            {
+                return new ResponseHandler
+                {
+                    status = "error",
+                    response = "Please try later!"
+                };
+            }
+        }
+
+        public ResponseHandler getPlanetNumberOfPilots()
+        {
+            try
+            {
+                // get list of planets with relation to film and starship
+                var planetlist = (from t1 in _films_planets
+                                  join t2 in _films_starships on t1.film_id equals t2.film_id
+                                  select new
+                                  {
+                                      planetid = t1.planet_id,
+                                      filmid = t1.film_id,
+                                      starshipid = t2.starship_id
+                                  }).GroupBy(x => x.planetid);
+
+                // get list of people data base on planet list
+                var peopleData = (from t1 in planetlist
+                                 select new
+                                 {
+                                     planetid = t1.Key,
+                                     people = (from t in _starships_pilots
+                                               where t1.Select(g => g.starshipid).Contains(t.starship_id)
+                                               select new { id = t.people_id }
+                                                ).Distinct()
+                                 });
+
+                // get final data with people count, species name, people name,planet name
+                var taskData = (from t1 in peopleData
+                                join t2 in _planets on t1.planetid equals t2.id
+                                select new
+                                {
+                                    planet_id = t1.planetid,
+                                    planetname = t2.name,
+                                    people_count = t1.people.Count(),
+                                    people_list = (from z1 in _people
+                                                   join z2 in _species_people on z1.id equals z2.people_id
+                                                   join z3 in _species on z2.species_id equals z3.id
+                                                   join z4 in t1.people on z1.id equals z4.id
+                                                   where t1.people.Select(g => g.id).Contains(z1.id)
+                                                   select new
+                                                   {
+                                                       people_name = z1.name + " - " + z3.name
+                                                   })
+                                }).OrderByDescending(x => x.people_count).Take(5);
+
+                return new ResponseHandler
+                {
+                    status = "success",
+                    response = JsonConvert.SerializeObject(new
+                    {
+                        planets = taskData,
                     })
                 };
 
