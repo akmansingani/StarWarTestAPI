@@ -13,5 +13,7 @@ namespace StarWarTestAPI.Services
         ResponseHandler getCharacterMostAppeared();
 
         ResponseHandler getMostNumberOfSpecies();
+
+        ResponseHandler getPlanetNumberOfPilots();
     }
 }

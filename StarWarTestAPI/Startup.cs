@@ -42,9 +42,9 @@ namespace StarWarTestAPI
             // decrypt connection string
             EncryptDecrypt objEn = new EncryptDecrypt();
             connectionString = objEn.DecryptData(connectionString);
-            //connectionString = @"Data Source=PK\SQLEXPRESS;Initial Catalog=StarWarDB;Integrated Security=False;Persist Security Info=False;User ID=sa;Password=sa@123";
 
             services.AddDbContext<MyDBContext>(options => options.UseSqlServer(connectionString));
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

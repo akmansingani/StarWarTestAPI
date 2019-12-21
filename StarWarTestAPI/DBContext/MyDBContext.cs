@@ -11,7 +11,7 @@ namespace StarWarTestAPI.DBContext
     {
         public MyDBContext(DbContextOptions<MyDBContext> options)
             : base(options)
-        { }
+        {  }
         public DbSet<FilmModel> films { get; set; }
 
         public DbSet<Films_CharacterModels> films_characters { get; set; }
@@ -26,6 +26,11 @@ namespace StarWarTestAPI.DBContext
         public DbSet<TransportModel> transports { get; set; }
         public DbSet<VehicleModel> vehicles { get; set; }
 
+        public DbSet<Films_StarShips> films_starships { get; set; }
+        public DbSet<StarsShips_Pilot> starships_pilots { get; set; }
+
+        public DbSet<Films_Planet> films_planets { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Films_CharacterModels>()
@@ -36,6 +41,15 @@ namespace StarWarTestAPI.DBContext
 
             modelBuilder.Entity<People_Species>()
                 .HasKey(c => new { c.species_id, c.people_id });
+
+            modelBuilder.Entity<Films_StarShips>()
+               .HasKey(c => new { c.starship_id, c.film_id });
+
+            modelBuilder.Entity<StarsShips_Pilot>()
+               .HasKey(c => new { c.starship_id, c.people_id });
+
+            modelBuilder.Entity<Films_Planet>()
+               .HasKey(c => new { c.film_id, c.planet_id });
         }
     }
 }
