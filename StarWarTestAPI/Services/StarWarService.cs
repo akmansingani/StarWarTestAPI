@@ -93,7 +93,7 @@ namespace StarWarTestAPI.Services
                                        speciescount = (from t4 in _dbContext.species_people
                                                        where t4.species_id == t3.FirstOrDefault().t1.species_id
                                                        select t4).Count()
-                                   });
+                                   }).Take(5);
 
 
                 return new ResponseHandler
