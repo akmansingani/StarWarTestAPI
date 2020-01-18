@@ -4,9 +4,13 @@
 Web service has 4 endpoints with different functionality, below are endpoints
 
 /api/home/getTitleOpenCrawl
+
 /api/home/getCharacterMostAppeared
+
 /api/home/getMostNumberOfSpecies
+
 /api/home/getPlanetNumberOfPilots
+
 
 
 ### `Setup steps`
