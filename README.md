@@ -1,18 +1,12 @@
 ## Star War Test API - .Net Core Rest API
 
-### `Web service`
-Web service hosted on Azure url : http://starwartestapi.azurewebsites.net/api/home/
-
-### `App url`
-Consume by app hosted on heroku : http://startwarclient.herokuapp.com/
-
 ### `API Endpoints`
 Web service has 4 endpoints with different functionality, below are endpoints
 
-http://starwartestapi.azurewebsites.net/api/home/getTitleOpenCrawl
-http://starwartestapi.azurewebsites.net/api/home/getCharacterMostAppeared
-http://starwartestapi.azurewebsites.net/api/home/getMostNumberOfSpecies
-http://starwartestapi.azurewebsites.net/api/home/getPlanetNumberOfPilots
+/api/home/getTitleOpenCrawl
+/api/home/getCharacterMostAppeared
+/api/home/getMostNumberOfSpecies
+/api/home/getPlanetNumberOfPilots
 
 
 ### `Setup steps`
